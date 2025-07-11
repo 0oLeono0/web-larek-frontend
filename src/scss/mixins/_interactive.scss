@@ -2,13 +2,14 @@
 @use "container" as mixins;
 
 @mixin button($color: $primary, $main: white, $hover: $secondary) {
-  padding: 1rem 2rem;
+  padding: 1rem 2.6rem;
   color: $color;
   font-weight: 500;
   background: $main;
   border-radius: 0.8rem;
   cursor: pointer;
   transition: background-color .3s ease;
+  font-size: 30px;
 
   &:hover {
     background: $hover;

@@ -4,15 +4,21 @@
 .order {
   @include mixins.flex(column);
   gap: 4rem;
-  margin-bottom: 4rem;
+  margin-block-end: 8.5rem;
 
   &__field {
     @include mixins.flex(column);
+    box-sizing: border-box;
+    padding-inline-end: 5.3rem;
     gap: 1.5rem;
   }
 
   &__buttons {
     @include mixins.flex(row);
     gap: 1.5rem;
+  }
+
+  &__button {
+    padding: 1rem 3.9rem;
   }
 }

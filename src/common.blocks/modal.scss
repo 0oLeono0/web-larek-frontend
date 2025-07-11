@@ -4,7 +4,7 @@
 .modal {
   @include mixins.sublayer;
   // height: max-content;
-  position: absolute;
+  position: fixed;
   display: none;
   justify-content: center;
   background-color: $overlayBackground;
@@ -18,7 +18,7 @@
   }
 
   &__container {
-    @include mixins.container;
+    @include mixins.container(96px, 96px);
     @include mixins.flex(column);
     gap: $defaultPadding;
     background-color: $background;
@@ -46,9 +46,9 @@
 
   &__close {
     position: absolute;
-    top: calc(#{$defaultPadding} / 2);
-    right: calc(#{$defaultPadding} / 2);
-    @include mixins.icon(2rem, 'close');
+    top: calc(100px / 2);
+    right: calc(100px / 2);
+    @include mixins.icon(2.8rem, 'close');
     @include mixins.link(white, $hover);
   }
 

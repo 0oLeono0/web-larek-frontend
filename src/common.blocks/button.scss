@@ -8,6 +8,10 @@
   &_alt {
     @include mixins.button(white, $primaryLight, $primaryLight);
     border: $defaultBorder;
+    font-weight: 400;
+    font-size: 30px;
+    padding-inline: 0;
+    width: 327px;
     &:hover {
       border: $hoverBorder;
     }
