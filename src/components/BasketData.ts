@@ -1,13 +1,15 @@
-import { IBasket } from "../types";
-import { IEvents } from "./base/events";
+import { IBasket } from '../types';
+import { IEvents } from './base/events';
 
 export class BasketData implements IBasket {
 	protected _items: string[];
 	protected _total: number;
+	protected events: IEvents;
 
-	constructor(protected events: IEvents) {
+	constructor(events: IEvents) {
 		this._items = [];
 		this._total = 0;
+		this.events = events;
 	}
 
 	set items(items: string[]) {
